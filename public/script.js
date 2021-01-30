@@ -9,6 +9,8 @@ let leaveMessageDiv = document.getElementById('leaveMessage')
 const socket = io()
 let peers ={}
 var peer = new Peer(undefined ,{
+    path: "/peerjs",
+    host:"/",
     port: '443'
 })
 let myId
