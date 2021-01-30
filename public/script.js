@@ -8,7 +8,9 @@ let username = prompt('enter username')
 let leaveMessageDiv = document.getElementById('leaveMessage')
 const socket = io()
 let peers ={}
-var peer = new Peer(undefined)
+var peer = new Peer(undefined ,{
+    port: '443'
+})
 let myId
 let myVideoStream
 let myVideo=document.createElement('video')
